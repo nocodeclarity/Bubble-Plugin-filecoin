@@ -8,6 +8,7 @@
     "demo_page": "https://filecoin.bubbleapps.io/version-test",
     "description": "NoCodeClarity has launched the Filecoin plugin for the Filecoin blockchain, empowering the next generation of Web3 developers and users to interact with IPFS in a seamless way. We are bringing IPFS to No Code!\n\nWith the Filecoin plugin, you are able to create No Code apps that leverage IPFS to upload files and retrieve files!  \n\nNoCodeClarity will add functionality as needed. \n\nWithout the support of the Filecoin Foundation through a grant, this would not be possible so thank you! \n\nTo learn more about Filecoin, please visit www.Filecoin.com today! ",
     "image": "",
+    "license": "open_source",
     "link": "http://nocodeclarity.com/",
     "name": "The Filecoin Plug-In",
     "plugin_instructions": "https://drive.google.com/file/d/1nb8r96puo3x1CxaKL6XrBCqn9esUHttc/view?usp=sharing"
