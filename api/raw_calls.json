@@ -1,0 +1,69 @@
+{
+    "calls": {
+        "AAJ": {
+            "body_type": "form_data",
+            "headers": {
+                "AAK": {
+                    "key": "X-NAME",
+                    "private": true,
+                    "value": "filename1.pdf"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Upload File",
+            "params": {
+                "AAL": {
+                    "binary_file": true,
+                    "key": "file",
+                    "private": true,
+                    "value": "//s3.amazonaws.com/appforest_uf/f1655929116360x837678777971776300/dummy.pdf"
+                }
+            },
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1652308585594x309657604070047740.plugin_api.AAJ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAJ\":{\"caption\":\"Web 3 Storage\",\"fields\":{\"_p_cid\":{\"ret_value\":\"text\",\"caption\":\"cid\",\"sample_value\":\"bafkreib566otjk54vgjqrz44xfcgdqmjgwbgatligkned7kl5qmilzvnwq\",\"path\":[\"cid\"]}}}}",
+            "url": "https://api.web3.storage/upload"
+        },
+        "AAO": {
+            "initialized": true,
+            "method": "get",
+            "name": "File Status",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1652308585594x309657604070047740.plugin_api.AAO",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAO\":{\"caption\":\"File Statu\",\"fields\":{\"_p_cid\":{\"ret_value\":\"text\",\"caption\":\"cid\",\"sample_value\":\"bafkreib566otjk54vgjqrz44xfcgdqmjgwbgatligkned7kl5qmilzvnwq\",\"path\":[\"cid\"]},\"_p_dagSize\":{\"ret_value\":\"number\",\"caption\":\"dagSize\",\"sample_value\":13264,\"path\":[\"dagSize\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2022-04-07T20:03:33.448+00:00\",\"path\":[\"created\"]},\"_p_pins\":{\"ret_value\":\"list.api.1652308585594x309657604070047740.plugin_api.AAO.pins\",\"caption\":\"pins\",\"path\":[\"pins\"]},\"_p_deals\":{\"ret_value\":\"list.api.1652308585594x309657604070047740.plugin_api.AAO.deals\",\"caption\":\"deals\",\"path\":[\"deals\"]}}},\"plugin_api.AAO.pins\":{\"caption\":\"File Status pin\",\"fields\":{\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"Remote\",\"path\":[\"status\"]},\"_p_updated\":{\"ret_value\":\"text\",\"caption\":\"updated\",\"sample_value\":\"2022-06-22T20:19:46.097+00:00\",\"path\":[\"updated\"]},\"_p_peerId\":{\"ret_value\":\"text\",\"caption\":\"peerId\",\"sample_value\":\"12D3KooWR19qPPiZH4khepNjS3CLXiB7AbrbAD4ZcDjN1UjGUNE1\",\"path\":[\"peerId\"]},\"_p_peerName\":{\"ret_value\":\"text\",\"caption\":\"peerName\",\"sample_value\":\"web3-storage-sv15\",\"path\":[\"peerName\"]},\"_p_region\":{\"ret_value\":\"text\",\"caption\":\"region\",\"sample_value\":null,\"path\":[\"region\"]}}},\"plugin_api.AAO.deals\":{\"caption\":\"File Status deal\",\"fields\":{\"_p_dealId\":{\"ret_value\":\"number\",\"caption\":\"dealId\",\"sample_value\":2660578,\"path\":[\"dealId\"]},\"_p_storageProvider\":{\"ret_value\":\"text\",\"caption\":\"storageProvider\",\"sample_value\":\"f022352\",\"path\":[\"storageProvider\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"Active\",\"path\":[\"status\"]},\"_p_pieceCid\":{\"ret_value\":\"text\",\"caption\":\"pieceCid\",\"sample_value\":\"baga6ea4seaqetjyucywgemwkwinxnrttrogfgjkxpofxiuunqd2h2p7gdy3wohy\",\"path\":[\"pieceCid\"]},\"_p_dataCid\":{\"ret_value\":\"text\",\"caption\":\"dataCid\",\"sample_value\":\"bafybeiawpt52r3w4jbdfd6dcoxupx7lrzjviy4t322u2so37bh55jvfwd4\",\"path\":[\"dataCid\"]},\"_p_dataModelSelector\":{\"ret_value\":\"text\",\"caption\":\"dataModelSelector\",\"sample_value\":\"Links/230/Hash/Links/147/Hash/Links/0/Hash\",\"path\":[\"dataModelSelector\"]},\"_p_activation\":{\"ret_value\":\"text\",\"caption\":\"activation\",\"sample_value\":\"2021-10-26T02:28:30+00:00\",\"path\":[\"activation\"]},\"_p_expiration\":{\"ret_value\":\"text\",\"caption\":\"expiration\",\"sample_value\":\"2023-03-20T02:28:30+00:00\",\"path\":[\"expiration\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2021-10-25T11:51:35.710599+00:00\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"text\",\"caption\":\"updated\",\"sample_value\":\"2021-10-25T19:40:59.518811+00:00\",\"path\":[\"updated\"]}}}}",
+            "url": "https://api.web3.storage/status/[cid]",
+            "url_params": {
+                "AAP": {
+                    "key": "cid",
+                    "private": true,
+                    "value": "bafkreib566otjk54vgjqrz44xfcgdqmjgwbgatligkned7kl5qmilzvnwq"
+                }
+            }
+        },
+        "AAQ": {
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "User Uploads",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1652308585594x309657604070047740.plugin_api.AAQ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAQ\":{\"caption\":\"User Upload\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"315318962269865396\",\"path\":[\"_id\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"Upload\",\"path\":[\"type\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"filename1.pdf\",\"path\":[\"name\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2022-06-22T20:19:46.097+00:00\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2022-06-22T20:19:46.097+00:00\",\"path\":[\"updated\"]},\"_p_cid\":{\"ret_value\":\"text\",\"caption\":\"cid\",\"sample_value\":\"bafkreib566otjk54vgjqrz44xfcgdqmjgwbgatligkned7kl5qmilzvnwq\",\"path\":[\"cid\"]},\"_p_dagSize\":{\"ret_value\":\"number\",\"caption\":\"dagSize\",\"sample_value\":13264,\"path\":[\"dagSize\"]},\"_p_pins\":{\"ret_value\":\"list.api.1652308585594x309657604070047740.plugin_api.AAQ.pins\",\"caption\":\"pins\",\"path\":[\"pins\"]},\"_p_deals\":{\"ret_value\":\"list.api.1652308585594x309657604070047740.plugin_api.AAQ.deals\",\"caption\":\"deals\",\"path\":[\"deals\"]}}},\"plugin_api.AAQ.pins\":{\"caption\":\"User Uploads pin\",\"fields\":{\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"Pinned\",\"path\":[\"status\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2022-06-22T20:19:46.097+00:00\",\"path\":[\"updated\"]},\"_p_peerId\":{\"ret_value\":\"text\",\"caption\":\"peerId\",\"sample_value\":\"12D3KooWJEfH2MB4RsUoaJPogDPRWbFTi8iehsxsqrQpiJwFNDrP\",\"path\":[\"peerId\"]},\"_p_peerName\":{\"ret_value\":\"text\",\"caption\":\"peerName\",\"sample_value\":\"web3-storage-dc13-3\",\"path\":[\"peerName\"]},\"_p_region\":{\"ret_value\":\"text\",\"caption\":\"region\",\"sample_value\":null,\"path\":[\"region\"]}}},\"plugin_api.AAQ.deals\":{\"caption\":\"User Uploads deal\",\"fields\":{\"_p_dealId\":{\"ret_value\":\"number\",\"caption\":\"dealId\",\"sample_value\":2660578,\"path\":[\"dealId\"]},\"_p_storageProvider\":{\"ret_value\":\"text\",\"caption\":\"storageProvider\",\"sample_value\":\"f022352\",\"path\":[\"storageProvider\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"Active\",\"path\":[\"status\"]},\"_p_pieceCid\":{\"ret_value\":\"text\",\"caption\":\"pieceCid\",\"sample_value\":\"baga6ea4seaqetjyucywgemwkwinxnrttrogfgjkxpofxiuunqd2h2p7gdy3wohy\",\"path\":[\"pieceCid\"]},\"_p_dataCid\":{\"ret_value\":\"text\",\"caption\":\"dataCid\",\"sample_value\":\"bafybeiawpt52r3w4jbdfd6dcoxupx7lrzjviy4t322u2so37bh55jvfwd4\",\"path\":[\"dataCid\"]},\"_p_dataModelSelector\":{\"ret_value\":\"text\",\"caption\":\"dataModelSelector\",\"sample_value\":\"Links/230/Hash/Links/147/Hash/Links/0/Hash\",\"path\":[\"dataModelSelector\"]},\"_p_activation\":{\"ret_value\":\"date_unix\",\"caption\":\"activation\",\"sample_value\":\"2021-10-26T02:28:30+00:00\",\"path\":[\"activation\"]},\"_p_expiration\":{\"ret_value\":\"date_unix\",\"caption\":\"expiration\",\"sample_value\":\"2023-03-20T02:28:30+00:00\",\"path\":[\"expiration\"]},\"_p_created\":{\"ret_value\":\"date_unix\",\"caption\":\"created\",\"sample_value\":\"2021-10-25T11:51:35.710599+00:00\",\"path\":[\"created\"]},\"_p_updated\":{\"ret_value\":\"date_unix\",\"caption\":\"updated\",\"sample_value\":\"2021-10-25T19:40:59.518811+00:00\",\"path\":[\"updated\"]}}}}",
+            "url": "https://api.web3.storage/user/uploads/"
+        }
+    },
+    "human": "IPFS Storage",
+    "shared_headers": {
+        "AAN": {
+            "key": "Authorization",
+            "private": true,
+            "visibility": "secret"
+        }
+    }
+}

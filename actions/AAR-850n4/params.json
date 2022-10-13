@@ -1,0 +1,14 @@
+{
+    "category": "plugins",
+    "display": "Open File URL",
+    "fields": {
+        "AAS": {
+            "caption": "CID",
+            "editor": "DynamicValue",
+            "name": "cid",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "client_side"
+}
